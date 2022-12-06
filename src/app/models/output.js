@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const mongoosedelete = require('mongoose-delete');
-const AutoIncrement = require('mongoose-sequence')(mongoose);
 
 const Schema = mongoose.Schema;
 

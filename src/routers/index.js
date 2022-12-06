@@ -7,6 +7,7 @@ const outputRouter = require('./output');
 const inputRouter = require('./input');
 const outputInfoRouter = require('./ouputInfo');
 const inputInfoRouter = require('./inputInfo');
+const accountRouter = require('./account');
 
 function route(app)
 {
@@ -18,6 +19,7 @@ function route(app)
     app.use('/input', inputRouter);
     app.use('/outputInfo', outputInfoRouter);
     app.use('/inputInfo', inputInfoRouter);
+    app.use('/account', accountRouter);
     app.use('/', homeRouter);
 }
 
